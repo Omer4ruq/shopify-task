@@ -1,11 +1,18 @@
-function toggleSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  if (sidebar.style.left === "0px") {
-    sidebar.style.left = "-250px";
-  } else {
-    sidebar.style.left = "0px";
-  }
-}
+document.querySelectorAll("nav a").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
+});
 
 function selectPlan(selected) {
   document.querySelectorAll(".plan").forEach((plan) => {

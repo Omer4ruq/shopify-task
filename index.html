@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raaya Social</title>
     <link rel="stylesheet" href="assets/style.css" />
+  
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -13,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -149,7 +152,7 @@
         50+ <br />
         <span>Our clients are featured in</span>
       </h3>
-      <img src="assets/Line 1.png" alt="" />
+      <img src="assets/Line 1.png" alt="" class="line1"/>
       <div class="client-logos">
         <img src="assets/Logos.png" alt="Boltshift" />
         <!-- <img src="lightbox.png" alt="Lightbox" />
@@ -213,31 +216,35 @@
               <img src="assets/Line sec.png" alt="" />
             </div>
             <div class="plans">
-              <div class="plan" onclick="selectPlan(this)">
-                <div class="plan-label">
-                  5 Short form videos - $99 / week
-                  <p>Tailored graphic and video content packages.</p>
-                </div>
-                <input type="radio" name="plan" />
+                <label class="plan">
+                  <input type="radio" name="plan" />
+                  <div class="plan-label">
+                    5 Short form videos - $99 / week
+                    <p>Tailored graphic and video content packages.</p>
+                  </div>
+                </label>
+              
+                <label class="plan">
+                  <input type="radio" name="plan"  />
+                  <div>
+                    <div class="most-popular">Most Popular</div>
+                    <span class="plan-label">
+                      10 Short form videos - $99 / week
+                      <p>Tailored graphic and video content packages.</p>
+                    </span>
+                  </div>
+                </label>
+              
+                <label class="plan">
+                  <input type="radio" name="plan" />
+                  <div class="plan-label">
+                    5 Short form videos - $99 / week
+                    <p>Tailored graphic and video content packages.</p>
+                  </div>
+                </label>
               </div>
-              <div class="plan selected" onclick="selectPlan(this)">
-                <div>
-                  <span class="most-popular">Most Popular</span>
-                  <span class="plan-label"
-                    >10 Short form videos - $99 / week
-                    <p>Tailored graphic and video content packages.</p></span
-                  >
-                </div>
-                <input type="radio" name="plan" checked />
-              </div>
-              <div class="plan" onclick="selectPlan(this)">
-                <div class="plan-label">
-                  5 Short form videos - $99 / week
-                  <p>Tailored graphic and video content packages.</p>
-                </div>
-                <input type="radio" name="plan" />
-              </div>
-            </div>
+              
+              
           </div>
           <a href="#" class="button">Get started</a>
         </div>
@@ -450,5 +457,6 @@
         </div>
         <p class="footer-copyright">© 2024 TaaDaa. All rights reserved.</p>
       </footer>
+      <script src="assets/main.js"></script>
   </body>
 </html>
