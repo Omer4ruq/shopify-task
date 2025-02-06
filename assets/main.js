@@ -1,22 +1,11 @@
-//  You can add JavaScript for interactive elements,
-//  animations, form submissions, etc. as needed.
-
-// Example: Smooth scrolling for navigation links
-document.querySelectorAll("nav a").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const targetId = this.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  });
-});
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  if (sidebar.style.left === "0px") {
+    sidebar.style.left = "-250px";
+  } else {
+    sidebar.style.left = "0px";
+  }
+}
 
 function selectPlan(selected) {
   document.querySelectorAll(".plan").forEach((plan) => {
