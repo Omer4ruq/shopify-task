@@ -33,9 +33,9 @@ body {
   font-size: 18px;
   font-weight: 400;
   padding: 8px 12px;
-  font-family: "poppins"; /* Replace with your actual font family */
-  transition: color 0.3s, transform 0.2s ease-in-out; /* Add transitions */
-  display: inline-block; /* Needed for transform to work correctly */
+  font-family: "poppins";
+  transition: color 0.3s, transform 0.2s ease-in-out;
+  display: inline-block;
 }
 
 .nav-links ul li a:hover {
@@ -78,14 +78,13 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: #000000;
-  transition: color 0.3s, transform 0.2s ease-in-out; /* Add transitions */
-  display: inline-block; /* Needed for transform to work correctly */
+  transition: color 0.3s, transform 0.2s ease-in-out;
+  display: inline-block;
 }
-
 .right-buttons .btn:hover {
-  color: #007bff; /* Change color on hover */
-  transform: translateY(-2px); /* Move up slightly */
-  /* Add a subtle box-shadow on hover */
+  color: #007bff;
+  transform: translateY(-2px);
+
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -99,13 +98,13 @@ body {
   font-weight: 500;
   font-family: "Nunito";
   color: #a657e7;
-  transition: color 0.3s, transform 0.2s ease-in-out; /* Add transitions */
-  display: inline-block; /* Needed for transform to work correctly */
+  transition: color 0.3s, transform 0.2s ease-in-out;
+  display: inline-block;
 }
 .right-buttons .btn1:hover {
-  color: #007bff; /* Change color on hover */
-  transform: translateY(-2px); /* Move up slightly */
-  /* Add a subtle box-shadow on hover */
+  color: #007bff;
+  transform: translateY(-2px);
+
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -391,9 +390,9 @@ header p {
   margin-bottom: 60px;
 
   width: 742px;
-  max-width: 100%; /* Makes it responsive */
+  max-width: 100%;
   margin-left: auto;
-  margin-right: auto; /* Centers the block */
+  margin-right: auto;
 }
 .features {
   display: flex;
@@ -489,7 +488,7 @@ header p {
 }
 
 .plan.selected::after {
-  content: "✔"; /* Checkmark */
+  content: "✔";
   font-size: 16px;
   color: white;
   text-align: center;
@@ -538,8 +537,8 @@ header p {
   font-weight: 400;
   text-decoration: none;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
   width: 156px;
   display: block;
 
@@ -663,7 +662,7 @@ header p {
 }
 
 .slider-container {
-  width: 90%; /* Adjust as needed */
+  width: 90%;
   margin: 40px 50px;
   position: relative;
   overflow: hidden;
@@ -694,8 +693,8 @@ header p {
 }
 
 .slide {
-  width: 25%; /* Each slide takes 25% of the container width */
-  flex-shrink: 0; /* Prevent slides from shrinking */
+  width: 25%;
+  flex-shrink: 0;
   position: relative;
 }
 
@@ -735,4 +734,77 @@ header p {
 
 .next-btn {
   right: -10px;
+}
+
+.faq-body {
+  font-family: Pappins, sans-serif;
+}
+.faq-body-extend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq-container {
+  width: 1200px;
+
+  padding: 20px;
+}
+.faq-title {
+  text-align: center;
+}
+.faq-title h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1e1e1e;
+}
+.faq-title h1 span {
+  color: #a554e6;
+}
+.faq-title p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px 100px;
+  color: #1d2939;
+}
+.faq-item {
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.faq-question {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+}
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #949494;
+}
+.faq-icon {
+  font-size: 18px;
 }
