@@ -4,4 +4,4 @@ This is a local simple shopify task website.. here are some key feature in this 
 
 - service all will show al the availber service
 
-- [Live Link](https://home-service-92300.web.app/)
+- [Live Link](https://cheerful-hamster-2a33e4.netlify.app/)
