@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
   </head>
   <body>
     <!-- <nav>
@@ -42,11 +43,12 @@
     </nav> -->
     <nav class="navbar">
       <div class="logo"><img src="assets/Logo.png" alt="" /></div>
+      <div class="hamburger" onclick="toggleSidebar()">☰</div>
       <div class="nav-links">
         <ul>
           <li><a href="#">Home</a></li>
           <li class="services-dropdown">
-            <a href="#">Services<i class="fas fa-chevron-down"></i></a>
+            <a href="#">Services <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-content">
               <li><a href="#">Service 1</a></li>
               <li><a href="#">Service 2</a></li>
@@ -62,8 +64,29 @@
       <div class="right-buttons">
         <button class="btn">Log In</button>
         <button class="btn1">Book a demo</button>
+      <div class="right-buttons">
+        <button class="btn">Log In</button>
+        <button class="btn1">Book a demo</button>
       </div>
     </nav>
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">sdfadf</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="services-dropdown">
+            <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">White Level</a></li>
+        </ul>
+      </div>
     <header>
       <div class="header-left">
         <div class="tag">
@@ -285,13 +308,13 @@
                         <div class="slide-content">Health & Wealth</div> </div>
                     <div class="slide">
                         <img src="assets/Image Container (2).png" alt="Image 2">
-                        <div class="slide-content">Slide 2 Content</div> </div>
+                        <div class="slide-content">Financial services</div> </div>
                     <div class="slide">
                         <img src="assets/Image Container (4).png" alt="Image 3">
-                        <div class="slide-content">Slide 3 Content</div> </div>
+                        <div class="slide-content">Real estate</div> </div>
                         <div class="slide">
                             <img src="assets/Image Container (4).png" alt="Image 3">
-                            <div class="slide-content">Slide 3 Content</div> </div>
+                            <div class="slide-content">Home services</div> </div>
                             <div class="slide">
                                 <img src="assets/Image Container (3).png" alt="Image 1">
                                 <div class="slide-content">Health & Wealth</div> </div>
@@ -314,17 +337,17 @@
                 <h1>Videos  For <img src="assets/Rectangle 6500.png" alt=""> <span>personal brands</span></h1>
                 <div class="slider">
                     <div class="slide">
-                        <img src="assets/Image Container (3).png" alt="Image 1">
+                        <img src="assets/2-Image Container.png" alt="Image 1">
                         <div class="slide-content">Health & Wealth</div> </div>
                     <div class="slide">
-                        <img src="assets/Image Container (2).png" alt="Image 2">
-                        <div class="slide-content">Slide 2 Content</div> </div>
+                        <img src="assets/2-Image Container (1).png" alt="Image 2">
+                        <div class="slide-content">Financial services</div> </div>
                     <div class="slide">
-                        <img src="assets/Image Container (4).png" alt="Image 3">
-                        <div class="slide-content">Slide 3 Content</div> </div>
+                        <img src="assets/2-Image Container (2).png" alt="Image 3">
+                        <div class="slide-content">Real estate</div> </div>
                         <div class="slide">
                             <img src="assets/Image Container (4).png" alt="Image 3">
-                            <div class="slide-content">Slide 3 Content</div> </div>
+                            <div class="slide-content">Home services</div> </div>
                             <div class="slide">
                                 <img src="assets/Image Container (3).png" alt="Image 1">
                                 <div class="slide-content">Health & Wealth</div> </div>
@@ -341,6 +364,18 @@
                 <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
                 <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
+        </section>
+        <section class="fifth-row">
+            <div class="fifth-row-body">
+            <div class="fifth-row-left">
+                <img src="assets/women-blog.png" alt="">
+            </div>
+            <div class="fifth-row-right">
+<h1>Why is short-form video so popular?</h1>
+<p>Video content in the short form is not new. In actuality, the 2012-released short-form video app Vine was a pioneer of the genre.<br> <br> but as tech giants like Instagram, TikTok, and YouTube launched short-form video features of their own, what had initially been a niche platform grew into something much larger.</p>
+    <a href="#" class="fifth-row-right-button">Back to demo</a>
+            </div>
+        </div>
         </section>
         <section class="faq-body">
             <div class="faq-title"><h1>
